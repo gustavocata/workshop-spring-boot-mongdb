@@ -1,7 +1,12 @@
 package com.gustavocata.workshopmongo.dto;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
+import org.springframework.data.mongodb.core.mapping.DBRef;
+
+import com.gustavocata.workshopmongo.domain.Post;
 import com.gustavocata.workshopmongo.domain.User;
 
 public class UserDTO implements Serializable {
@@ -10,7 +15,8 @@ public class UserDTO implements Serializable {
 	private String id;
 	private String name;
 	private String email;
-
+	
+	
 	public UserDTO() {
 		
 	}
@@ -44,5 +50,5 @@ public class UserDTO implements Serializable {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
+
 }
